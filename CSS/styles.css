@@ -1,2 +1,6 @@
 @import 'global.css';
 @import 'main.css';
+
+.fa-row {
+    background-color: #fdd835;
+  }
