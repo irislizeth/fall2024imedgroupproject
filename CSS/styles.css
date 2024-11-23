@@ -1,2 +1,6 @@
 @import 'global.css';
 @import 'main.css';
+
+.navbar {
+    background-color: #fdd835;
+  }
