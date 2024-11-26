@@ -15,14 +15,44 @@
   </head>
   <!--This is the homepage! Add stuff you want on the homepage here. We'll figure out how to link pages later.-->
   <body>
-    <header>
-      <div class="">
-        <div class="">
-          <h3>testing text ooooooo</h3>
-        </div>
-      </div>
-    </header>
+    <header></header>
     <main>
+      <!--Navbar from bootstrap-->
+      <nav class="navbar navbar-style navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid navbar-style">
+          <a class="navbar-brand" href="#">Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Signup Form</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="egypt.html">Egypt</a></li>
+                  <li><a class="dropdown-item" href="japan.html">Japan</a></li>
+                  <!-- <li><hr class="dropdown-divider" /></li> -->
+                  <li><a class="dropdown-item" href="maldives.html">Maldives</a></li>
+                </ul>
+              </li>
+              <!--I don't think we need this but just in case we do remove this comment around it
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <!--Carousel from bootstrap-->
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -32,23 +62,23 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="images/maldives.jpg" class="d-block w-100" alt="Image of the Maldives." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Maldives</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="images/japan.jpg" class="d-block w-100" alt="Image of Japan." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>Japan</h5>
+              <p>This is Japan.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="images/egypt.jpg" class="d-block w-100" alt="Image of Egypt." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Egypt</h5>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
@@ -65,7 +95,7 @@
     </main>
     <!--foot-->
     <footer>
-      <div>Footer</div>
+      <div class="foot">Footer</div>
     </footer>
     <!--JS dump-->
     <div>
@@ -73,4 +103,4 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </div>
   </body>
-</html> 
+</html>
